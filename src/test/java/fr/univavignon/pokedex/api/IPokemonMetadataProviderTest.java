@@ -29,12 +29,19 @@ public class IPokemonMetadataProviderTest {
     @Test
     public void getMetadataOfBulbizarreWhenIndexIs0() throws PokedexException {
         when(pokemonMetadataProvider.getPokemonMetadata(0)).thenReturn(bulbizarreMetadata);
-        Assert.assertEquals(pokemonMetadataProvider.getPokemonMetadata(0),bulbizarreMetadata);
+        Assert.assertEquals(0,bulbizarreMetadata.getIndex());
+        Assert.assertEquals("Bulbizarre",bulbizarreMetadata.getName());
+        Assert.assertEquals(126,bulbizarreMetadata.getAttack());
+        Assert.assertEquals(126,bulbizarreMetadata.getDefense());
+        Assert.assertEquals(90,bulbizarreMetadata.getStamina());
     }
 
     @Test
     public void getMetadataOfAqualiWhenIndexIs133() throws PokedexException {
         when(pokemonMetadataProvider.getPokemonMetadata(133)).thenReturn(aqualiMetadata);
-        Assert.assertEquals(pokemonMetadataProvider.getPokemonMetadata(133),aqualiMetadata);
-    }
+        Assert.assertEquals(133,aqualiMetadata.getIndex());
+        Assert.assertEquals("Aquali",aqualiMetadata.getName());
+        Assert.assertEquals(186,aqualiMetadata.getAttack());
+        Assert.assertEquals(168,aqualiMetadata.getDefense());
+        Assert.assertEquals(260,aqualiMetadata.getStamina());    }
 }

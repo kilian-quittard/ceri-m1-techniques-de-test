@@ -71,8 +71,9 @@ public class IPokedexTest {
     @Test
     public void shouldReturnPokemonsOrderedWhenPokemonListIsGiven(){
         List res = Arrays.asList(aquali,bulbizarre);
+        List test = Arrays.asList(aquali,bulbizarre);
 
         when(pokedex.getPokemons(PokemonComparators.NAME)).thenReturn(res);
-        Assert.assertEquals(pokedex.getPokemons(PokemonComparators.NAME),res);
+        Assert.assertEquals(pokedex.getPokemons(PokemonComparators.NAME),test);
     }
 }

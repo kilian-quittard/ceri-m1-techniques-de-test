@@ -1,5 +1,10 @@
 # UCE Génie Logiciel Avancé : Techniques de tests
 
+[![codecov](https://codecov.io/gh/kilian-quittard/ceri-m1-techniques-de-test/branch/master/graph/badge.svg?token=OYP3ERLDOL)](https://codecov.io/gh/kilian-quittard/ceri-m1-techniques-de-test)
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=shield)](https://circleci.com/gh/circleci/circleci-docs)
+
+Auteur : QUITTARD Kilian Groupe : ILSEN-CLA
+
 ## Introduction
 
 Vous allez à travers ces projet mettre en application une partie des aspects évoqués en cours vis à vis des techniques de tests.  

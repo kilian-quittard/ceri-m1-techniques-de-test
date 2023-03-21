@@ -26,7 +26,9 @@ public class IPokemonTrainerFactoryTest {
     @Test
     public void createPokemonTrainer(){
         when(pokemonTrainerFactory.createTrainer("Kilian",Team.VALOR,pokedexFactory)).thenReturn(pokemonTrainer);
-        Assert.assertEquals(pokemonTrainerFactory.createTrainer("Kilian",Team.VALOR,pokedexFactory),pokemonTrainer);
+        Assert.assertEquals("Kilian",pokemonTrainer.getName());
+        Assert.assertEquals(Team.VALOR,pokemonTrainer.getTeam());
+        Assert.assertEquals(pokedex,pokemonTrainer.getPokedex());
     }
 
 
