@@ -16,12 +16,16 @@ public class IPokedexTest {
     IPokedex pokedex;
     Pokemon bulbizarre;
     Pokemon aquali;
+    IPokemonMetadataProvider pokemonMetadataProvider;
+    IPokemonFactory pokemonFactory;
 
     @Before
     public void init(){
         pokedex = new PokedexFactory().createPokedex(new PokemonMetadataProvider(),new PokemonFactory());
         bulbizarre = new Pokemon(0, "Bulbizarre", 126, 126, 90, 613, 64, 4000, 4, 56);
         aquali = new Pokemon(133,"Aquali",186,168,260,2729,202,5000,4,100);
+        pokemonMetadataProvider = new PokemonMetadataProvider();
+        pokemonFactory = new PokemonFactory();
     }
 
     @Test
@@ -75,5 +79,49 @@ public class IPokedexTest {
 
         List test = Arrays.asList(aquali,bulbizarre);
         Assert.assertEquals(pokedex.getPokemons(PokemonComparators.NAME),test);
+    }
+
+    @Test
+    public void shouldReturnPBulbizarre() throws PokedexException {
+        IPokedex poke = new Pokedex() {
+            @Override
+            public Pokemon createPokemon(int index, int cp, int hp, int dust, int candy) throws PokedexException {
+                return pokemonFactory.createPokemon(index, cp, hp, dust, candy);
+            }
+            @Override
+            public PokemonMetadata getPokemonMetadata(int index) throws PokedexException {
+                return pokemonMetadataProvider.getPokemonMetadata(index);
+            }
+        };
+
+        Pokemon pokemon = poke.createPokemon(0,613,64,4000,4);
+        Assert.assertEquals(pokemon.getIndex(),bulbizarre.getIndex());
+        Assert.assertEquals(pokemon.getCp(),bulbizarre.getCp());
+        Assert.assertEquals(pokemon.getHp(),bulbizarre.getHp());
+        Assert.assertEquals(pokemon.getDust(),bulbizarre.getDust());
+        Assert.assertEquals(pokemon.getCandy(),bulbizarre.getCandy());
+
+    }
+
+    @Test
+    public void shouldReturnPBulbizarreMetadata() throws PokedexException {
+        IPokedex poke = new Pokedex() {
+            @Override
+            public Pokemon createPokemon(int index, int cp, int hp, int dust, int candy) throws PokedexException {
+                return pokemonFactory.createPokemon(index, cp, hp, dust, candy);
+            }
+            @Override
+            public PokemonMetadata getPokemonMetadata(int index) throws PokedexException {
+                return pokemonMetadataProvider.getPokemonMetadata(index);
+            }
+        };
+
+        PokemonMetadata pokemonMetadata = poke.getPokemonMetadata(0);
+        Assert.assertEquals(pokemonMetadata.getIndex(),bulbizarre.getIndex());
+        Assert.assertEquals(pokemonMetadata.getName(),bulbizarre.getName());
+        Assert.assertEquals(pokemonMetadata.getAttack(),bulbizarre.getAttack());
+        Assert.assertEquals(pokemonMetadata.getDefense(),bulbizarre.getDefense());
+        Assert.assertEquals(pokemonMetadata.getStamina(),bulbizarre.getStamina());
+
     }
 }

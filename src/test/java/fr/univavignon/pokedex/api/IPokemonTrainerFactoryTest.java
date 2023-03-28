@@ -25,9 +25,10 @@ public class IPokemonTrainerFactoryTest {
 
     @Test
     public void createPokemonTrainer(){
-        Assert.assertEquals("Kilian",pokemonTrainer.getName());
-        Assert.assertEquals(Team.VALOR,pokemonTrainer.getTeam());
-        Assert.assertEquals(pokedex,pokemonTrainer.getPokedex());
+        PokemonTrainer trainer = new PokemonTrainer("Kilian",Team.VALOR,pokedex);
+        Assert.assertEquals(trainer.getName(),pokemonTrainer.getName());
+        Assert.assertEquals(trainer.getTeam(),pokemonTrainer.getTeam());
+        Assert.assertEquals(trainer.getPokedex(),pokemonTrainer.getPokedex());
     }
 
 
