@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad747aac-a07f-408c-b3e6-219f5d5bc598" name="Changes" comment="Changement du README + modifications sur les tests unitaires (TP4)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokedex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokedexFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+    <list default="true" id="ad747aac-a07f-408c-b3e6-219f5d5bc598" name="Changes" comment="Implémentation des interfaces (TP4)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokedex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokedex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokedexFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokedexFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonMetadataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonMetadataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonFactoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonFactoryTest.class" afterDir="false" />
     </list>
@@ -79,9 +80,24 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IPokemonFactoryTest">
+  <component name="RunManager" selected="JUnit.IPokedexTest.exceptionPokedexTest">
     <configuration name="app" type="Application" factoryName="Application">
       <module name="java-project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IPokedexFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.univavignon.pokedex.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
+      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokedexFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IPokedexTest.shouldReturnPokemonsOrderedWhenPokemonListIsGiven" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IPokedexTest.exceptionPokedexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-project" />
       <extension name="coverage">
         <pattern>
@@ -111,7 +127,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
       <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokedexTest" />
-      <option name="METHOD_NAME" value="shouldReturnPokemonsOrderedWhenPokemonListIsGiven" />
+      <option name="METHOD_NAME" value="exceptionPokedexTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,21 +143,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
       <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokemonFactoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IPokemonMetadataProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.univavignon.pokedex.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
-      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokemonMetadataProviderTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,19 +178,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.app" />
-      <item itemvalue="JUnit.IPokemonFactoryTest" />
-      <item itemvalue="JUnit.IPokemonMetadataProviderTest" />
       <item itemvalue="JUnit.IPokemonTrainerFactoryTest" />
+      <item itemvalue="JUnit.IPokedexFactoryTest" />
       <item itemvalue="JUnit.IPokedexTest" />
-      <item itemvalue="JUnit.IPokedexTest.shouldReturnPokemonsOrderedWhenPokemonListIsGiven" />
+      <item itemvalue="JUnit.IPokemonFactoryTest" />
+      <item itemvalue="JUnit.IPokedexTest.exceptionPokedexTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IPokedexTest.exceptionPokedexTest" />
         <item itemvalue="JUnit.IPokemonFactoryTest" />
-        <item itemvalue="JUnit.IPokedexTest.shouldReturnPokemonsOrderedWhenPokemonListIsGiven" />
         <item itemvalue="JUnit.IPokedexTest" />
+        <item itemvalue="JUnit.IPokedexFactoryTest" />
         <item itemvalue="JUnit.IPokemonTrainerFactoryTest" />
-        <item itemvalue="JUnit.IPokemonMetadataProviderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +221,7 @@
       <workItem from="1679401451942" duration="7474000" />
       <workItem from="1679410571118" duration="11000" />
       <workItem from="1679412315414" duration="862000" />
-      <workItem from="1680001811298" duration="2507000" />
+      <workItem from="1680001811298" duration="6332000" />
     </task>
     <task id="LOCAL-00001" summary="Projet opérationnel avec Maven">
       <created>1676627938950</created>
@@ -271,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679409689962</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implémentation des interfaces (TP4)">
+      <created>1680004532307</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680004532307</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +304,7 @@
     <MESSAGE value="Modification de pom.xml et circle.ci (TP4)" />
     <MESSAGE value="circle.ci (TP4)" />
     <MESSAGE value="Changement du README + modifications sur les tests unitaires (TP4)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changement du README + modifications sur les tests unitaires (TP4)" />
+    <MESSAGE value="Implémentation des interfaces (TP4)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implémentation des interfaces (TP4)" />
   </component>
 </project>

@@ -19,42 +19,41 @@ public class IPokedexTest {
 
     @Before
     public void init(){
-        pokedex = Mockito.mock(IPokedex.class);
+        pokedex = new PokedexFactory().createPokedex(new PokemonMetadataProvider(),new PokemonFactory());
         bulbizarre = new Pokemon(0, "Bulbizarre", 126, 126, 90, 613, 64, 4000, 4, 56);
         aquali = new Pokemon(133,"Aquali",186,168,260,2729,202,5000,4,100);
     }
 
     @Test
-    public void exceptionMetadataTest(){
+    public void exceptionPokedexTest(){
+        Assert.assertThrows(PokedexException.class, () -> pokedex.getPokemon(12));
     }
 
     @Test
     public void shouldReturn1WhenGetSize(){
-        when(pokedex.size()).thenReturn(1);
+        pokedex.addPokemon(bulbizarre);
         Assert.assertEquals(pokedex.size(),1);
     }
 
     @Test
     public void shouldReturn0WhenBulbizarreIsAdded(){
-        when(pokedex.addPokemon(bulbizarre)).thenReturn(0);
         Assert.assertEquals(pokedex.addPokemon(bulbizarre),bulbizarre.getIndex());
     }
 
     @Test
     public void shouldReturn133WhenAqualiIsAdded(){
-        when(pokedex.addPokemon(aquali)).thenReturn(133);
         Assert.assertEquals(pokedex.addPokemon(aquali),aquali.getIndex());
     }
 
     @Test
     public void shouldReturnBulbizarreWhenGetPokemonIndexIsO() throws PokedexException {
-        when(pokedex.getPokemon(0)).thenReturn(bulbizarre);
+        pokedex.addPokemon(bulbizarre);
         Assert.assertEquals(pokedex.getPokemon(0),bulbizarre);
     }
 
     @Test
     public void shouldReturnAqualiWhenGetPokemonIndexIs133() throws PokedexException {
-        when(pokedex.getPokemon(133)).thenReturn(aquali);
+        pokedex.addPokemon(aquali);
         Assert.assertEquals(pokedex.getPokemon(133),aquali);
     }
 
@@ -64,16 +63,17 @@ public class IPokedexTest {
         pokemons.add(bulbizarre);
         pokemons.add(aquali);
 
-        when(pokedex.getPokemons()).thenReturn(pokemons);
+        pokedex.addPokemon(bulbizarre);
+        pokedex.addPokemon(aquali);
         Assert.assertEquals(pokedex.getPokemons(),pokemons);
     }
 
     @Test
     public void shouldReturnPokemonsOrderedWhenPokemonListIsGiven(){
-        List res = Arrays.asList(aquali,bulbizarre);
-        List test = Arrays.asList(aquali,bulbizarre);
+        pokedex.addPokemon(bulbizarre);
+        pokedex.addPokemon(aquali);
 
-        when(pokedex.getPokemons(PokemonComparators.NAME)).thenReturn(res);
+        List test = Arrays.asList(aquali,bulbizarre);
         Assert.assertEquals(pokedex.getPokemons(PokemonComparators.NAME),test);
     }
 }

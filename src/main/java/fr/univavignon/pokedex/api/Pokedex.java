@@ -8,9 +8,13 @@ import java.util.List;
 public abstract class Pokedex implements IPokedex {
 
     public List<Pokemon> pokemons;
+    public PokemonMetadataProvider pokemonMetadataProvider;
+    public PokemonFactory pokemonFactory;
 
     public Pokedex(){
         pokemons = new ArrayList<>();
+        pokemonMetadataProvider = new PokemonMetadataProvider();
+        pokemonFactory = new PokemonFactory();
     }
 
     @Override
@@ -20,13 +24,19 @@ public abstract class Pokedex implements IPokedex {
 
     @Override
     public int addPokemon(Pokemon pokemon) {
-        pokemons.set(pokemon.getIndex(),pokemon);
+        pokemons.add(pokemon);
         return pokemon.getIndex();
     }
 
     @Override
     public Pokemon getPokemon(int id) throws PokedexException {
-        return pokemons.get(id);
+        for(Pokemon pokemon : pokemons){
+            if(pokemon.getIndex() == id){
+                return pokemon;
+            }
+        }
+
+        throw new PokedexException("Le Pokémon n'est pas enregistré dans le pokédex");
     }
 
     @Override
@@ -36,9 +46,13 @@ public abstract class Pokedex implements IPokedex {
 
     @Override
     public List<Pokemon> getPokemons(Comparator<Pokemon> order) {
-        List<Pokemon> pokemonList = Collections.unmodifiableList(pokemons);
+        List<Pokemon> pokemonList = pokemons;
         pokemonList.sort(order);
-        return pokemonList;
+
+        return Collections.unmodifiableList(pokemonList);
     }
 
+    public PokemonMetadataProvider getPokemonMetadataProvider() {
+        return pokemonMetadataProvider;
+    }
 }

@@ -17,7 +17,7 @@ public class IPokemonTrainerFactoryTest {
 
     @Before
     public void init(){
-        pokemonTrainerFactory = Mockito.mock(IPokemonTrainerFactory.class);
+        pokemonTrainerFactory = new PokemonTrainerFactory();
         pokedexFactory = Mockito.mock(IPokedexFactory.class);
         pokedex = Mockito.mock(IPokedex.class);
         pokemonTrainer = new PokemonTrainer("Kilian", Team.VALOR, pokedex);
@@ -25,7 +25,6 @@ public class IPokemonTrainerFactoryTest {
 
     @Test
     public void createPokemonTrainer(){
-        when(pokemonTrainerFactory.createTrainer("Kilian",Team.VALOR,pokedexFactory)).thenReturn(pokemonTrainer);
         Assert.assertEquals("Kilian",pokemonTrainer.getName());
         Assert.assertEquals(Team.VALOR,pokemonTrainer.getTeam());
         Assert.assertEquals(pokedex,pokemonTrainer.getPokedex());
