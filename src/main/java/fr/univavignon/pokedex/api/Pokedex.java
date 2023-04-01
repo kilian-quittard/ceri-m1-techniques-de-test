@@ -5,12 +5,16 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public abstract class Pokedex implements IPokedex {
+public class Pokedex implements IPokedex {
 
     public List<Pokemon> pokemons;
+    public PokemonFactory pokemonFactory;
+    public PokemonMetadataProvider pokemonMetadataProvider;
 
     public Pokedex(){
         pokemons = new ArrayList<>();
+        pokemonFactory = new PokemonFactory();
+        pokemonMetadataProvider = new PokemonMetadataProvider();
     }
 
     @Override
@@ -51,5 +55,15 @@ public abstract class Pokedex implements IPokedex {
         pokemonList.sort(order);
 
         return Collections.unmodifiableList(pokemonList);
+    }
+
+    @Override
+    public Pokemon createPokemon(int index, int cp, int hp, int dust, int candy) throws PokedexException {
+        return pokemonFactory.createPokemon(index, cp, hp, dust, candy);
+    }
+
+    @Override
+    public PokemonMetadata getPokemonMetadata(int index) throws PokedexException {
+        return pokemonMetadataProvider.getPokemonMetadata(index);
     }
 }

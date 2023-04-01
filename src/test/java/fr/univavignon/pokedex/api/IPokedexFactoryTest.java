@@ -22,17 +22,7 @@ public class IPokedexFactoryTest {
 
     @Test
     public void createPokedex(){
-        IPokedex poke = new Pokedex() {
-            @Override
-            public Pokemon createPokemon(int index, int cp, int hp, int dust, int candy) throws PokedexException {
-                return pokemonFactory.createPokemon(index, cp, hp, dust, candy);
-            }
-            @Override
-            public PokemonMetadata getPokemonMetadata(int index) throws PokedexException {
-                return pokemonMetadataProvider.getPokemonMetadata(index);
-            }
-        };
-
+        IPokedex poke = new Pokedex();
         Assert.assertEquals(pokedexFactory.createPokedex(pokemonMetadataProvider,pokemonFactory).size(),poke.size());
         Assert.assertEquals(pokedexFactory.createPokedex(pokemonMetadataProvider,pokemonFactory).getPokemons(),poke.getPokemons());
     }

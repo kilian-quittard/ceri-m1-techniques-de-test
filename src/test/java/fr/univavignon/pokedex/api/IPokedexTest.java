@@ -83,18 +83,8 @@ public class IPokedexTest {
 
     @Test
     public void shouldReturnPBulbizarre() throws PokedexException {
-        IPokedex poke = new Pokedex() {
-            @Override
-            public Pokemon createPokemon(int index, int cp, int hp, int dust, int candy) throws PokedexException {
-                return pokemonFactory.createPokemon(index, cp, hp, dust, candy);
-            }
-            @Override
-            public PokemonMetadata getPokemonMetadata(int index) throws PokedexException {
-                return pokemonMetadataProvider.getPokemonMetadata(index);
-            }
-        };
 
-        Pokemon pokemon = poke.createPokemon(0,613,64,4000,4);
+        Pokemon pokemon = pokedex.createPokemon(0,613,64,4000,4);
         Assert.assertEquals(pokemon.getIndex(),bulbizarre.getIndex());
         Assert.assertEquals(pokemon.getCp(),bulbizarre.getCp());
         Assert.assertEquals(pokemon.getHp(),bulbizarre.getHp());
@@ -105,18 +95,9 @@ public class IPokedexTest {
 
     @Test
     public void shouldReturnPBulbizarreMetadata() throws PokedexException {
-        IPokedex poke = new Pokedex() {
-            @Override
-            public Pokemon createPokemon(int index, int cp, int hp, int dust, int candy) throws PokedexException {
-                return pokemonFactory.createPokemon(index, cp, hp, dust, candy);
-            }
-            @Override
-            public PokemonMetadata getPokemonMetadata(int index) throws PokedexException {
-                return pokemonMetadataProvider.getPokemonMetadata(index);
-            }
-        };
 
-        PokemonMetadata pokemonMetadata = poke.getPokemonMetadata(0);
+
+        PokemonMetadata pokemonMetadata = pokedex.getPokemonMetadata(0);
         Assert.assertEquals(pokemonMetadata.getIndex(),bulbizarre.getIndex());
         Assert.assertEquals(pokemonMetadata.getName(),bulbizarre.getName());
         Assert.assertEquals(pokemonMetadata.getAttack(),bulbizarre.getAttack());
