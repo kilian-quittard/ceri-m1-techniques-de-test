@@ -95,8 +95,6 @@ public class IPokedexTest {
 
     @Test
     public void shouldReturnPBulbizarreMetadata() throws PokedexException {
-
-
         PokemonMetadata pokemonMetadata = pokedex.getPokemonMetadata(0);
         Assert.assertEquals(pokemonMetadata.getIndex(),bulbizarre.getIndex());
         Assert.assertEquals(pokemonMetadata.getName(),bulbizarre.getName());

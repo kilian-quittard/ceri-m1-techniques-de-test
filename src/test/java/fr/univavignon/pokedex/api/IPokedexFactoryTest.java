@@ -22,7 +22,7 @@ public class IPokedexFactoryTest {
 
     @Test
     public void createPokedex(){
-        IPokedex poke = new Pokedex();
+        IPokedex poke = new Pokedex(pokemonMetadataProvider,pokemonFactory);
         Assert.assertEquals(pokedexFactory.createPokedex(pokemonMetadataProvider,pokemonFactory).size(),poke.size());
         Assert.assertEquals(pokedexFactory.createPokedex(pokemonMetadataProvider,pokemonFactory).getPokemons(),poke.getPokemons());
     }

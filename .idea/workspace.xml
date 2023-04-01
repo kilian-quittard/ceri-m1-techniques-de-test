@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad747aac-a07f-408c-b3e6-219f5d5bc598" name="Changes" comment="Modification des tests unitaires (TP4)">
+    <list default="true" id="ad747aac-a07f-408c-b3e6-219f5d5bc598" name="Changes" comment="Modification des tests unitaires et de la classe Pokédex (TP4)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokedex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokedex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokedexFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokedexFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexFactoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokedexFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokedexFactoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokedexTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokedexTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +79,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IPokemonTrainerFactoryTest">
+  <component name="RunManager" selected="JUnit.IPokedexFactoryTest">
     <configuration name="app" type="Application" factoryName="Application">
       <module name="java-project" />
       <method v="2">
@@ -113,7 +116,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IPokedexTest.shouldReturnPBulbizarre" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IPokemonFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-project" />
       <extension name="coverage">
         <pattern>
@@ -122,14 +125,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
-      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokedexTest" />
-      <option name="METHOD_NAME" value="shouldReturnPBulbizarre" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokemonFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IPokedexTest.shouldReturnPBulbizarreMetadata" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IPokemonMetadataProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-project" />
       <extension name="coverage">
         <pattern>
@@ -138,9 +140,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
-      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokedexTest" />
-      <option name="METHOD_NAME" value="shouldReturnPBulbizarreMetadata" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokemonMetadataProviderTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,19 +176,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.app" />
-      <item itemvalue="JUnit.IPokedexTest.shouldReturnPBulbizarre" />
-      <item itemvalue="JUnit.IPokedexTest.shouldReturnPBulbizarreMetadata" />
       <item itemvalue="JUnit.IPokedexTest" />
       <item itemvalue="JUnit.IPokedexFactoryTest" />
       <item itemvalue="JUnit.IPokemonTrainerFactoryTest" />
+      <item itemvalue="JUnit.IPokemonFactoryTest" />
+      <item itemvalue="JUnit.IPokemonMetadataProviderTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IPokemonTrainerFactoryTest" />
         <item itemvalue="JUnit.IPokedexFactoryTest" />
+        <item itemvalue="JUnit.IPokemonTrainerFactoryTest" />
+        <item itemvalue="JUnit.IPokemonMetadataProviderTest" />
+        <item itemvalue="JUnit.IPokemonFactoryTest" />
         <item itemvalue="JUnit.IPokedexTest" />
-        <item itemvalue="JUnit.IPokedexTest.shouldReturnPBulbizarreMetadata" />
-        <item itemvalue="JUnit.IPokedexTest.shouldReturnPBulbizarre" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +221,7 @@
       <workItem from="1679412315414" duration="862000" />
       <workItem from="1680001811298" duration="10178000" />
       <workItem from="1680260707293" duration="38000" />
-      <workItem from="1680355286658" duration="347000" />
+      <workItem from="1680355286658" duration="1361000" />
     </task>
     <task id="LOCAL-00001" summary="Projet opérationnel avec Maven">
       <created>1676627938950</created>
@@ -306,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680010753153</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Modification des tests unitaires et de la classe Pokédex (TP4)">
+      <created>1680355893503</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680355893503</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,6 +343,7 @@
     <MESSAGE value="Modification des tests unitaires et des classes implémentant les interfaces (TP4)" />
     <MESSAGE value="Modification de la classe Pokedex (TP4)" />
     <MESSAGE value="Modification des tests unitaires (TP4)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification des tests unitaires (TP4)" />
+    <MESSAGE value="Modification des tests unitaires et de la classe Pokédex (TP4)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification des tests unitaires et de la classe Pokédex (TP4)" />
   </component>
 </project>
