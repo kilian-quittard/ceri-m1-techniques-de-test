@@ -15,6 +15,28 @@
     <version>1.0</version>
     <name>TP1</name>
     <url>http://univ-avignon.fr</url>
+
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>3.2.1</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>
+                                checkstyle
+                            </report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
+
+
     <build>
         <plugins>
             <plugin>
@@ -74,6 +96,11 @@
                 </executions>
             </plugin>
 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
         </plugins>
     </build>
     <dependencies>
