@@ -2,8 +2,9 @@
 
 [![codecov](https://codecov.io/gh/kilian-quittard/ceri-m1-techniques-de-test/branch/master/graph/badge.svg?token=OYP3ERLDOL)](https://codecov.io/gh/kilian-quittard/ceri-m1-techniques-de-test)
 [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=shield)](https://circleci.com/gh/circleci/circleci-docs)
+![Checkstyle](target/site/badges/checkstyle-result.svg)
 
-Auteur : QUITTARD Kilian Groupe : ILSEN-CLA
+De la part de  : QUITTARD Kilian du magnifique groupe : ILSEN-CLA
 
 ## Introduction
 
