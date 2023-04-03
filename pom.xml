@@ -101,8 +101,42 @@
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.7.1</version>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
+                </configuration>
+            </plugin>
+            
         </plugins>
     </build>
+
+
+    <distributionManagement>
+        <site>
+            <id>github</id>
+            <url>https://github.com/kilian-quittard/ceri-m1-techniques-de-test/</url>
+        </site>
+    </distributionManagement>
+
+    <scm>
+        <connection>scm:git:git://github.com/kilian-quittard/ceri-m1-techniques-de-test.git</connection>
+        <developerConnection>scm:git:ssh://github.com/USERNAME/ceri-m1-techniques-de-test.git</developerConnection>
+        <url>https://github.com/kilian-quittard/ceri-m1-techniques-de-test</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>http://central</url>
+        </repository>
+    </repositories>
+
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>

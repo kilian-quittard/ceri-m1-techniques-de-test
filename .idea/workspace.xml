@@ -4,30 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad747aac-a07f-408c-b3e6-219f5d5bc598" name="Changes" comment="Ajout de checkstyle (TP5)">
+    <list default="true" id="ad747aac-a07f-408c-b3e6-219f5d5bc598" name="Changes" comment="Ajout des résultats de checkstyle (TP5)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/IPokedex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/IPokedexFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/IPokemonFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/IPokemonMetadataProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/IPokemonTrainerFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokedexException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/Pokemon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonComparators.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonMetadata.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonTrainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/Team.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-project-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-java-project-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokedexFactoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokedexTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonFactoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonMetadataProviderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +48,13 @@
     <setting file="file://$PROJECT_DIR$/Rendu-TP1-Programmation-Java-Groupe-Rocket-Jessica-James-Miaouss/README.txt" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/tp11.iml" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MavenRunner">
+    <option name="environmentProperties">
+      <map>
+        <entry key="JAVA_HOME" value="/usr/lib/jvm/java-11-openjdk-amd64" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectId" id="2LrLwW6vU5u2D0cZBtzI1fEuhmq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -87,7 +73,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3873563" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -102,6 +88,7 @@
       <command value="mvn checkstyle:checkstyle" />
       <command value="mvn badger:badges" />
       <command value="mvn post-site" />
+      <command value="mvn javadoc:javadoc" />
     </option>
   </component>
   <component name="RunManager" selected="JUnit.IPokedexFactoryTest">
@@ -253,7 +240,8 @@
       <workItem from="1680520519349" duration="3094000" />
       <workItem from="1680523644820" duration="264000" />
       <workItem from="1680523936451" duration="303000" />
-      <workItem from="1680524265377" duration="1044000" />
+      <workItem from="1680524265377" duration="3147000" />
+      <workItem from="1680527476074" duration="1010000" />
     </task>
     <task id="LOCAL-00001" summary="Projet opérationnel avec Maven">
       <created>1676627938950</created>
@@ -374,7 +362,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680521527136</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Ajout de checkstyle (modification du pom.xml) (TP5)">
+      <created>1680525568136</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1680525568136</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Ajout de checkstyle (modification du pom.xml) (TP5)">
+      <created>1680525749342</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1680525749342</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,6 +407,7 @@
     <MESSAGE value="Modification des tests unitaires (TP4)" />
     <MESSAGE value="Modification des tests unitaires et de la classe Pokédex (TP4)" />
     <MESSAGE value="Ajout de checkstyle (TP5)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de checkstyle (TP5)" />
+    <MESSAGE value="Ajout de checkstyle (modification du pom.xml) (TP5)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de checkstyle (modification du pom.xml) (TP5)" />
   </component>
 </project>
