@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad747aac-a07f-408c-b3e6-219f5d5bc598" name="Changes" comment="Modification des tests unitaires et de la classe Pokédex (TP4)">
+    <list default="true" id="ad747aac-a07f-408c-b3e6-219f5d5bc598" name="Changes" comment="Ajout de checkstyle (TP5)">
       <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +218,7 @@
       <workItem from="1680519817837" duration="275000" />
       <workItem from="1680520122453" duration="292000" />
       <workItem from="1680520438969" duration="50000" />
-      <workItem from="1680520519349" duration="739000" />
+      <workItem from="1680520519349" duration="841000" />
     </task>
     <task id="LOCAL-00001" summary="Projet opérationnel avec Maven">
       <created>1676627938950</created>
@@ -321,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680356750428</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Ajout de checkstyle (TP5)">
+      <created>1680521307085</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680521307085</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,6 +355,7 @@
     <MESSAGE value="Modification de la classe Pokedex (TP4)" />
     <MESSAGE value="Modification des tests unitaires (TP4)" />
     <MESSAGE value="Modification des tests unitaires et de la classe Pokédex (TP4)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification des tests unitaires et de la classe Pokédex (TP4)" />
+    <MESSAGE value="Ajout de checkstyle (TP5)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de checkstyle (TP5)" />
   </component>
 </project>
