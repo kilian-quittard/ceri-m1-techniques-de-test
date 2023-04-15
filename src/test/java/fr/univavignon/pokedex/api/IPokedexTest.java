@@ -53,12 +53,16 @@ public class IPokedexTest {
     public void shouldReturnBulbizarreWhenGetPokemonIndexIsO() throws PokedexException {
         pokedex.addPokemon(bulbizarre);
         Assert.assertEquals(pokedex.getPokemon(0),bulbizarre);
+        Assert.assertEquals(pokedex.getPokemon(0).getIndex(),0);
+        Assert.assertEquals(pokedex.getPokemon(0).getName(), "Bulbizarre");
     }
 
     @Test
     public void shouldReturnAqualiWhenGetPokemonIndexIs133() throws PokedexException {
         pokedex.addPokemon(aquali);
         Assert.assertEquals(pokedex.getPokemon(133),aquali);
+        Assert.assertEquals(pokedex.getPokemon(133).getIndex(),133);
+        Assert.assertEquals(pokedex.getPokemon(133).getName(), "Aquali");
     }
 
     @Test

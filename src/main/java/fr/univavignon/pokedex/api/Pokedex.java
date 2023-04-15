@@ -32,12 +32,12 @@ public class Pokedex implements IPokedex {
     @Override
     public Pokemon getPokemon(int id) throws PokedexException {
 
-        return pokemons.stream()
-                .filter(pokemon -> id == pokemon.getIndex())
-                .findAny()
-                .orElseThrow(() -> {
-                    return new PokedexException("Le Pokémon n'est pas enregistré dans le pokédex");
-                });
+        for (Pokemon pokemon : pokemons) {
+            if (pokemon.getIndex() == id) {
+                return pokemon;
+            }
+        }
+        throw new PokedexException("Le Pokémon n'est pas enregistré dans le pokédex");
     }
 
     @Override
