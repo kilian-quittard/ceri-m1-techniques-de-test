@@ -51,7 +51,8 @@ jobs:
       - codecov/upload
 
   docs-deploy:
-
+    docker:
+      - image: cimg/openjdk:17.0
     steps:
       - checkout
       - run:
@@ -81,7 +82,6 @@ workflows:
       - docs-deploy:
           requires:
             - build-and-test
-            - docs-deploy
           filters:
             branches:
               only: master
