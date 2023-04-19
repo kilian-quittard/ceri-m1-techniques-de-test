@@ -58,3 +58,11 @@ workflows:
     jobs:
 
       - build-and-test
+      - deploy:
+            name: Deploy Javadoc to GitHub Pages
+            command: |
+              mkdir -p target/site/apidocs
+              cp -R target/site/apidocs/* target/site/apidocs/
+            branches:
+              only:
+                - master
