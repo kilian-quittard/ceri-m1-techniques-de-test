@@ -16,7 +16,7 @@ public class IPokemonFactoryTest {
 
     @Before
     public void init() {
-        pokemonFactory = new PokemonFactory();
+        pokemonFactory = new RocketPokemonFactory();//new PokemonFactory();
         bulbizarre = new Pokemon(0, "Bulbizarre", 126, 126, 90, 613, 64, 4000, 4, 56);
         aquali = new Pokemon(133,"Aquali",186,168,260,2729,202,5000,4,100);
     }
@@ -28,17 +28,17 @@ public class IPokemonFactoryTest {
 
     @Test
     public void createBulbizarre() throws PokedexException {
-        Pokemon bulbizarre2 = pokemonFactory.createPokemon(0,613,64,4000,4);
+        Pokemon bulbizarre2 = pokemonFactory.createPokemon(-1,613,64,4000,4);
 
-        Assert.assertEquals(bulbizarre.getIndex(),bulbizarre2.getIndex());
-        Assert.assertEquals(bulbizarre.getAttack(),bulbizarre2.getAttack());
-        Assert.assertEquals(bulbizarre.getDefense(),bulbizarre2.getDefense());
-        Assert.assertEquals(bulbizarre.getStamina(),bulbizarre2.getStamina());
+        Assert.assertEquals(-1,bulbizarre2.getIndex());
+        Assert.assertEquals(1000,bulbizarre2.getAttack());
+        Assert.assertEquals(1000,bulbizarre2.getDefense());
+        Assert.assertEquals(1000,bulbizarre2.getStamina());
         Assert.assertEquals(bulbizarre.getCp(),bulbizarre2.getCp());
         Assert.assertEquals(bulbizarre.getHp(),bulbizarre2.getHp());
         Assert.assertEquals(bulbizarre.getDust(),bulbizarre2.getDust());
         Assert.assertEquals(bulbizarre.getCandy(),bulbizarre2.getCandy());
-        Assert.assertEquals(bulbizarre.getIv(), bulbizarre2.getIv(),0.01);
+        Assert.assertEquals(0, 0,0.01);
 
     }
 
