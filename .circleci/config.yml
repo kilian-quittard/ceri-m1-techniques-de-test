@@ -54,18 +54,13 @@ jobs:
 
     docker:
       - image: cimg/openjdk:17.0
-
+      - image: node:8.10.0
     steps:
       - checkout
-
-      - run:
-          name: Copy Javadoc to GitHub Pages directory
-          command: |
-            mkdir -p gh-pages
-            cp -R target/site/apidocs/* gh-pages/
       - run:
           name: Commit and Push Javadoc to GitHub Pages
           command: |
+            npm install -g --silent gh-pages@2.0.1
             git config --global user.name "kilian-quittard"
             git config --global user.email "kilian.quittard@alumni.univ-avignon.fr"
             gh-pages --dotfiles --message "[skip ci] Updates" --dist target/site/apidocs
