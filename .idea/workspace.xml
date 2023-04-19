@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad747aac-a07f-408c-b3e6-219f5d5bc598" name="Changes" comment="Début d'implémentation des tests pour la classe de la Team Rocket (TP6) + modification fichier config.yml (circleci)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ad747aac-a07f-408c-b3e6-219f5d5bc598" name="Changes" comment="Rapport TP6 conclusions (TP6)">
       <change beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonFactoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +97,7 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IPokemonFactoryTest.createBulbizarre">
+  <component name="RunManager" selected="JUnit.IPokemonFactoryTest">
     <configuration name="app" type="Application" factoryName="Application">
       <module name="java-project" />
       <method v="2">
@@ -207,8 +206,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IPokemonFactoryTest.createBulbizarre" />
         <item itemvalue="JUnit.IPokemonFactoryTest" />
+        <item itemvalue="JUnit.IPokemonFactoryTest.createBulbizarre" />
         <item itemvalue="JUnit.IPokemonFactoryTest.createAquali" />
         <item itemvalue="JUnit.IPokemonFactoryTest.exceptionMetadataTest" />
         <item itemvalue="JUnit.IPokedexTest.shouldReturnPokemonsWhenPokemonListIsGiven" />
@@ -254,7 +253,7 @@
       <workItem from="1680524265377" duration="3147000" />
       <workItem from="1680527476074" duration="2676000" />
       <workItem from="1681579594838" duration="1260000" />
-      <workItem from="1681892034818" duration="3665000" />
+      <workItem from="1681892034818" duration="4044000" />
     </task>
     <task id="LOCAL-00001" summary="Projet opérationnel avec Maven">
       <created>1676627938950</created>
@@ -410,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681580729459</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Rapport TP6 conclusions (TP6)">
+      <created>1681896673720</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1681896673720</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,6 +450,7 @@
     <MESSAGE value="Ajout de checkstyle (modification du pom.xml) (TP5)" />
     <MESSAGE value="Ajout de la génération automatique de la javadoc (TP5)" />
     <MESSAGE value="Début d'implémentation des tests pour la classe de la Team Rocket (TP6) + modification fichier config.yml (circleci)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Début d'implémentation des tests pour la classe de la Team Rocket (TP6) + modification fichier config.yml (circleci)" />
+    <MESSAGE value="Rapport TP6 conclusions (TP6)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rapport TP6 conclusions (TP6)" />
   </component>
 </project>
