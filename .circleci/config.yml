@@ -57,13 +57,17 @@ jobs:
       - image: node:8.10.0
     steps:
       - checkout
+      - attach_workspace:
+          at: docs/_build
       - run:
           name: Commit and Push Javadoc to GitHub Pages
           command: |
             npm install -g --silent gh-pages@2.0.1
             git config --global user.name "kilian-quittard"
             git config --global user.email "kilian.quittard@alumni.univ-avignon.fr"
-            gh-pages --dotfiles --message "[skip ci] Updates" --dist target/site/apidocs
+      - run:
+          name: Deploy docs to gh-pages branch
+          command: gh-pages --dist docs/_build/html
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
