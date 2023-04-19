@@ -35,18 +35,18 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonMetadataProviderTest.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokemon.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexFactoryTest.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexTest.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonFactoryTest.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/tp11.iml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.circleci/config.yml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonComparators.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonFactoryTest.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedex.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokemon.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rendu-TP1-Programmation-Java-Groupe-Rocket-Jessica-James-Miaouss/RocketPokemonFactory.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexFactoryTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexTest.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Rendu-TP1-Programmation-Java-Groupe-Rocket-Jessica-James-Miaouss/README.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/tp11.iml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenRunner">
     <option name="environmentProperties">
@@ -98,41 +98,9 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IPokemonFactoryTest.exceptionMetadataTest">
+  <component name="RunManager" selected="JUnit.IPokemonFactoryTest.createBulbizarre">
     <configuration name="app" type="Application" factoryName="Application">
       <module name="java-project" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IPokedexTest.exceptionPokedexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.univavignon.pokedex.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
-      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokedexTest" />
-      <option name="METHOD_NAME" value="exceptionPokedexTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IPokedexTest.shouldReturnBulbizarreWhenGetPokemonIndexIsO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.univavignon.pokedex.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
-      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokedexTest" />
-      <option name="METHOD_NAME" value="shouldReturnBulbizarreWhenGetPokemonIndexIsO" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,6 +121,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IPokemonFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.univavignon.pokedex.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
+      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokemonFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IPokemonFactoryTest.createAquali" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-project" />
       <extension name="coverage">
@@ -164,6 +147,22 @@
       <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
       <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokemonFactoryTest" />
       <option name="METHOD_NAME" value="createAquali" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IPokemonFactoryTest.createBulbizarre" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.univavignon.pokedex.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
+      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokemonFactoryTest" />
+      <option name="METHOD_NAME" value="createBulbizarre" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -201,18 +200,18 @@
     <list>
       <item itemvalue="Application.app" />
       <item itemvalue="JUnit.IPokemonFactoryTest.createAquali" />
-      <item itemvalue="JUnit.IPokedexTest.exceptionPokedexTest" />
-      <item itemvalue="JUnit.IPokedexTest.shouldReturnBulbizarreWhenGetPokemonIndexIsO" />
       <item itemvalue="JUnit.IPokedexTest.shouldReturnPokemonsWhenPokemonListIsGiven" />
       <item itemvalue="JUnit.IPokemonFactoryTest.exceptionMetadataTest" />
+      <item itemvalue="JUnit.IPokemonFactoryTest" />
+      <item itemvalue="JUnit.IPokemonFactoryTest.createBulbizarre" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IPokemonFactoryTest.createBulbizarre" />
+        <item itemvalue="JUnit.IPokemonFactoryTest" />
+        <item itemvalue="JUnit.IPokemonFactoryTest.createAquali" />
         <item itemvalue="JUnit.IPokemonFactoryTest.exceptionMetadataTest" />
         <item itemvalue="JUnit.IPokedexTest.shouldReturnPokemonsWhenPokemonListIsGiven" />
-        <item itemvalue="JUnit.IPokedexTest.shouldReturnBulbizarreWhenGetPokemonIndexIsO" />
-        <item itemvalue="JUnit.IPokedexTest.exceptionPokedexTest" />
-        <item itemvalue="JUnit.IPokemonFactoryTest.createAquali" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +253,8 @@
       <workItem from="1680523936451" duration="303000" />
       <workItem from="1680524265377" duration="3147000" />
       <workItem from="1680527476074" duration="2676000" />
-      <workItem from="1681579594838" duration="1111000" />
+      <workItem from="1681579594838" duration="1260000" />
+      <workItem from="1681892034818" duration="3665000" />
     </task>
     <task id="LOCAL-00001" summary="Projet opérationnel avec Maven">
       <created>1676627938950</created>
@@ -403,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681580081306</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Début d'implémentation des tests pour la classe de la Team Rocket (TP6) + modification fichier config.yml (circleci)">
+      <created>1681580729459</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1681580729459</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
