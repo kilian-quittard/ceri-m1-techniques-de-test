@@ -64,7 +64,7 @@ jobs:
             sudo npm install -g --silent gh-pages@2.0.1
             git config --global user.name "kilian-quittard"
             git config --global user.email "kilian.quittard@alumni.univ-avignon.fr"
-            sudo chown -R kilian-quittard ../../../usr/local/lib/node_modules/gh-pages/.cache/git@github.com!kilian-quittard!ceri-m1-techniques-de-test.git
+            sudo chown -R uapv2002058 ../../../usr/local/lib/node_modules/gh-pages/.cache/git@github.com!kilian-quittard!ceri-m1-techniques-de-test.git
       - run:
           name: Deploy docs to gh-pages branch
           command: gh-pages --dist target/site/apidocs
