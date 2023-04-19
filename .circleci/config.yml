@@ -61,7 +61,7 @@ jobs:
       - run:
           name: Commit and Push Javadoc to GitHub Pages
           command: |
-            npm install -g --silent gh-pages@2.0.1
+            sudo npm install -g --silent gh-pages@2.0.1
             git config --global user.name "kilian-quittard"
             git config --global user.email "kilian.quittard@alumni.univ-avignon.fr"
       - run:
