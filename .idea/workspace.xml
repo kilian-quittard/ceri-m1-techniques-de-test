@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad747aac-a07f-408c-b3e6-219f5d5bc598" name="Changes" comment="Rapport TP6 conclusions (TP6)">
+    <list default="true" id="ad747aac-a07f-408c-b3e6-219f5d5bc598" name="Changes" comment="Test du fichier de config.yaml + Rapport (TP6)">
       <change beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonFactoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -253,7 +253,7 @@
       <workItem from="1680524265377" duration="3147000" />
       <workItem from="1680527476074" duration="2676000" />
       <workItem from="1681579594838" duration="1260000" />
-      <workItem from="1681892034818" duration="4044000" />
+      <workItem from="1681892034818" duration="4355000" />
     </task>
     <task id="LOCAL-00001" summary="Projet opérationnel avec Maven">
       <created>1676627938950</created>
@@ -416,7 +416,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681896673720</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Test du fichier de config.yaml">
+      <created>1681897177884</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1681897177884</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Test du fichier de config.yaml + Rapport (TP6)">
+      <created>1681897195346</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1681897195346</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,6 +465,8 @@
     <MESSAGE value="Ajout de la génération automatique de la javadoc (TP5)" />
     <MESSAGE value="Début d'implémentation des tests pour la classe de la Team Rocket (TP6) + modification fichier config.yml (circleci)" />
     <MESSAGE value="Rapport TP6 conclusions (TP6)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rapport TP6 conclusions (TP6)" />
+    <MESSAGE value="Test du fichier de config.yaml" />
+    <MESSAGE value="Test du fichier de config.yaml + Rapport (TP6)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test du fichier de config.yaml + Rapport (TP6)" />
   </component>
 </project>
