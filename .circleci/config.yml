@@ -68,9 +68,7 @@ jobs:
           command: |
             git config --global user.name "kilian-quittard"
             git config --global user.email "kilian.quittard@alumni.univ-avignon.fr"
-            git add gh-pages/*
-            git commit -m "Add Javadoc"
-            git push origin gh-pages
+            gh-pages --dotfiles --message "[skip ci] Updates" --dist target/site/apidocs
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
