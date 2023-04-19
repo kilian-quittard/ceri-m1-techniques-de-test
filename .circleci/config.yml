@@ -54,7 +54,7 @@ jobs:
 
     docker:
       - image: cimg/openjdk:17.0
-      - image: cimg/node:8.10.0
+      - image: cimg/node:19.9.0
     steps:
       - checkout
       - attach_workspace:
