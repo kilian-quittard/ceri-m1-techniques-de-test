@@ -51,6 +51,7 @@ jobs:
             git add .
             git commit -m "Javadoc Updated"
             git push origin gh-pages
+
       - store_artifacts:
           path: target/site/jacoco/jacoco.xml
           destination: /tmp/artifacts
@@ -69,7 +70,7 @@ workflows:
   verification: # This is the name of the workflow, feel free to change it to better match your workflow.
     # Inside the workflow, you define the jobs you want to run.
     jobs:
-      - build-and-test
+      - build-and-test:
           filters:
             branches:
               only: master
