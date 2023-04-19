@@ -12,6 +12,7 @@
     <url>https://github.com/kilian-quittard/ceri-m1-techniques-de-test</url>
   </scm>
   <build>
+    <testSourceDirectory>src/test/java</testSourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>
@@ -78,14 +79,12 @@
           <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
         </configuration>
       </plugin>
+      <plugin>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>2.7</version>
+      </plugin>
     </plugins>
   </build>
-  <repositories>
-    <repository>
-      <id>central</id>
-      <url>http://central</url>
-    </repository>
-  </repositories>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -144,5 +143,7 @@
   <properties>
     <maven.compiler.target>1.8</maven.compiler.target>
     <maven.compiler.source>1.8</maven.compiler.source>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
 </project>

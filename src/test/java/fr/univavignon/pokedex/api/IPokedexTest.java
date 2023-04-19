@@ -70,7 +70,6 @@ public class IPokedexTest {
         List pokemons = new ArrayList<>();
         pokemons.add(bulbizarre);
         pokemons.add(aquali);
-
         pokedex.addPokemon(bulbizarre);
         pokedex.addPokemon(aquali);
         Assert.assertEquals(pokedex.getPokemons(),pokemons);
@@ -80,21 +79,18 @@ public class IPokedexTest {
     public void shouldReturnPokemonsOrderedWhenPokemonListIsGiven(){
         pokedex.addPokemon(bulbizarre);
         pokedex.addPokemon(aquali);
-
         List test = Arrays.asList(aquali,bulbizarre);
         Assert.assertEquals(pokedex.getPokemons(PokemonComparators.NAME),test);
     }
 
     @Test
     public void shouldReturnPBulbizarre() throws PokedexException {
-
         Pokemon pokemon = pokedex.createPokemon(0,613,64,4000,4);
         Assert.assertEquals(pokemon.getIndex(),bulbizarre.getIndex());
         Assert.assertEquals(pokemon.getCp(),bulbizarre.getCp());
         Assert.assertEquals(pokemon.getHp(),bulbizarre.getHp());
         Assert.assertEquals(pokemon.getDust(),bulbizarre.getDust());
         Assert.assertEquals(pokemon.getCandy(),bulbizarre.getCandy());
-
     }
 
     @Test
@@ -105,6 +101,5 @@ public class IPokedexTest {
         Assert.assertEquals(pokemonMetadata.getAttack(),bulbizarre.getAttack());
         Assert.assertEquals(pokemonMetadata.getDefense(),bulbizarre.getDefense());
         Assert.assertEquals(pokemonMetadata.getStamina(),bulbizarre.getStamina());
-
     }
 }

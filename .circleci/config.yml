@@ -52,22 +52,23 @@ jobs:
 
   docs-deploy:
 
-    docker:
-      - image: cimg/node:19.9.0
     steps:
       - checkout
-      - attach_workspace:
-          at: docs/_build
       - run:
           name: Config for Github
           command: |
-            sudo npm install -g --silent gh-pages@2.0.1
             git config --global user.name "kilian-quittard"
             git config --global user.email "kilian.quittard@alumni.univ-avignon.fr"
-            sudo chown -R uapv2002058 ../../../usr/local/lib/node_modules/gh-pages/.cache/git@github.com!kilian-quittard!ceri-m1-techniques-de-test.git
+            git clone --branch=gh-pages --depth=1 git@github.com:kilian-quittard/ceri-m1-techniques-de-test.git gh-pages
       - run:
           name: Deploy docs to gh-pages branch
-          command: gh-pages --dist target/site/apidocs
+          command: |
+            rm -rf gh-pages/*
+            cp -R target/site/apidocs/* gh-pages/
+            cd gh-pages
+            git add .
+            git commit -m "Update Javadoc"
+            git push origin gh-pages
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
