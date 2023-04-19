@@ -56,25 +56,23 @@ workflows:
   verification: # This is the name of the workflow, feel free to change it to better match your workflow.
     # Inside the workflow, you define the jobs you want to run.
     jobs:
-
-      - build-and-test
-
-      docs-deploy:
-        steps:
-          - checkout
-          - run:
-              name: Copy Javadoc to GitHub Pages directory
-              command: |
-                mkdir -p gh-pages
-                cp -R target/site/apidocs/* gh-pages/
-          - run:
-              name: Commit and Push Javadoc to GitHub Pages
-              command: |
-                git config --global user.name "kilian-quittard"
-                git config --global user.email "kilian.quittard@alumni.univ-avignon.fr"
-                git add gh-pages/*
-                git commit -m "Add Javadoc"
-                git push origin gh-pages
-          branches:
-            only:
-              - master # Ou la branche sur laquelle vous souhaitez générer la Javadoc
+        - build-and-test
+        docs-deploy:
+          steps:
+            - checkout
+            - run:
+                name: Copy Javadoc to GitHub Pages directory
+                command: |
+                  mkdir -p gh-pages
+                  cp -R target/site/apidocs/* gh-pages/
+            - run:
+                name: Commit and Push Javadoc to GitHub Pages
+                command: |
+                  git config --global user.name "kilian-quittard"
+                  git config --global user.email "kilian.quittard@alumni.univ-avignon.fr"
+                  git add gh-pages/*
+                  git commit -m "Add Javadoc"
+                  git push origin gh-pages
+            branches:
+              only:
+                - master
