@@ -70,6 +70,7 @@ public class IPokedexTest {
         List pokemons = new ArrayList<>();
         pokemons.add(bulbizarre);
         pokemons.add(aquali);
+
         pokedex.addPokemon(bulbizarre);
         pokedex.addPokemon(aquali);
         Assert.assertEquals(pokedex.getPokemons(),pokemons);
