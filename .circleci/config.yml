@@ -58,11 +58,23 @@ workflows:
     jobs:
 
       - build-and-test
-      - deploy:
-            name: Deploy Javadoc to GitHub Pages
-            command: |
-              mkdir -p target/site/apidocs
-              cp -R target/site/apidocs/* target/site/apidocs/
-            branches:
-              only:
-                - master
+
+      docs-deploy:
+        steps:
+          - checkout
+          - run:
+              name: Copy Javadoc to GitHub Pages directory
+              command: |
+                mkdir -p gh-pages
+                cp -R target/site/apidocs/* gh-pages/
+          - run:
+              name: Commit and Push Javadoc to GitHub Pages
+              command: |
+                git config --global user.name "kilian-quittard"
+                git config --global user.email "kilian.quittard@alumni.univ-avignon.fr"
+                git add gh-pages/*
+                git commit -m "Add Javadoc"
+                git push origin gh-pages
+          branches:
+            only:
+              - master # Ou la branche sur laquelle vous souhaitez générer la Javadoc
