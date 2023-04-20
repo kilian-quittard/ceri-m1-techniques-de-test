@@ -6,46 +6,72 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Pokedex implements IPokedex {
+    /**
+     * The list which contains all the captured Pokemon.
+     */
+    private final List<Pokemon> pokemons;
+    /**
+     * The pokemon factory to create pokemon.
+     */
+    private final IPokemonFactory pokemonFactory;
+    /**
+     * The metadata provider.
+     */
+    private final IPokemonMetadataProvider pokemonMetadataProvider;
 
-    public List<Pokemon> pokemons;
-    public IPokemonFactory pokemonFactory;
-    public IPokemonMetadataProvider pokemonMetadataProvider;
-
-
-    public Pokedex(IPokemonMetadataProvider metadataProvider, IPokemonFactory pokemonFactory) {
+    /**
+     * @param metadataProvider PokemonMetadataProvider to add to this pokedex.
+     * @param factory PokemonFactory to add to this pokedex.
+     */
+    public Pokedex(IPokemonMetadataProvider metadataProvider, IPokemonFactory factory) {
         pokemons = new ArrayList<>();
-        this.pokemonFactory = pokemonFactory;
+        pokemonFactory = factory;
         pokemonMetadataProvider = metadataProvider;
     }
 
+    /**
+     * @return Number of pokemon in this pokedex.
+     */
     @Override
     public int size() {
         return pokemons.size();
     }
 
+    /**
+     * @param pokemon Pokemon to add to this pokedex.
+     * @return Index of this pokemon in the pokedex.
+     */
     @Override
-    public int addPokemon(Pokemon pokemon) {
+    public int addPokemon(final Pokemon pokemon) {
         pokemons.add(pokemon);
-        return pokemon.getIndex();
+        return pokemons.size();
     }
 
+    /**
+     * @param id Pokemon ID to add.
+     * @return The pokemon.
+     * @throws PokedexException If given <code>index</code> does not exist.
+     */
     @Override
-    public Pokemon getPokemon(int id) throws PokedexException {
-        for (Pokemon pokemon : pokemons) {
-            if (pokemon.getIndex() == id) {
-                return pokemon;
-            }
+    public Pokemon getPokemon(final int id) throws PokedexException {
+        if (id < 0 || id >= pokemons.size()) {
+            throw new PokedexException("Le Pokémon n'est pas enregistré dans le pokédex");
         }
-        throw new PokedexException("Le Pokémon n'est pas enregistré dans le pokédex");
-
-
+        return pokemons.get(id);
     }
 
+    /**
+     * @return The list of pokemons captured.
+     */
     @Override
     public List<Pokemon> getPokemons() {
         return Collections.unmodifiableList(pokemons);
     }
 
+    /**
+     * @param order Field to order the list.
+     * @return The list of pokemons captured in order.
+     */
     @Override
     public List<Pokemon> getPokemons(Comparator<Pokemon> order) {
         List<Pokemon> pokemonList = pokemons;
@@ -53,13 +79,44 @@ public class Pokedex implements IPokedex {
         return Collections.unmodifiableList(pokemonList);
     }
 
+    /**
+     * Creates a pokemon instance computing it IVs.
+     * @param index Pokemon index.
+     * @param cp Pokemon CP.
+     * @param hp Pokemon HP.
+     * @param dust Required dust for upgrading pokemon.
+     * @param candy Required candy for upgrading pokemon.
+     * @return Created pokemon instance.
+     * @throws PokedexException If given <code>index</code> is not valid.
+     */
     @Override
-    public Pokemon createPokemon(int index, int cp, int hp, int dust, int candy) throws PokedexException {
+    public Pokemon createPokemon(final int index, final int cp, final int hp, final int dust, final int candy) throws PokedexException {
         return pokemonFactory.createPokemon(index, cp, hp, dust, candy);
     }
 
+    /**
+     * Retrieves and returns the metadata for the pokemon
+     * denoted by the given <code>index</code>.
+     * @param index Index of the pokemon to retrieve metadata for.
+     * @return Metadata of the pokemon.
+     * @throws PokedexException If given <code>index</code> is not valid.
+     */
     @Override
-    public PokemonMetadata getPokemonMetadata(int index) throws PokedexException {
+    public PokemonMetadata getPokemonMetadata(final int index) throws PokedexException {
         return pokemonMetadataProvider.getPokemonMetadata(index);
+    }
+
+    /**
+     * @return Factory for pokemon creation.
+     */
+    public IPokemonFactory getPokemonFactory() {
+        return pokemonFactory;
+    }
+
+    /**
+     * @return Metadata provier for pokemon.
+     */
+    public IPokemonMetadataProvider getPokemonMetadataProvider() {
+        return pokemonMetadataProvider;
     }
 }

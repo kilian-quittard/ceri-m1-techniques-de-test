@@ -4,13 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad747aac-a07f-408c-b3e6-219f5d5bc598" name="Changes" comment="Modification de config.yaml pour l'envoi de la doc JAVA">
+    <list default="true" id="ad747aac-a07f-408c-b3e6-219f5d5bc598" name="Changes" comment="Modification des classes pour ajouter les commentaires de la JavaDoc + Modification pour checkstyle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedexFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedexFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonMetadataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonMetadataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonTrainerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonTrainerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokedex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokedex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokedexException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokedexException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokedexFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokedexFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonComparators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonComparators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonMetadata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonMetadata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonMetadataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonMetadataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Team.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonMetadataProviderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonMetadataProviderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkstyle-cachefile" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkstyle-cachefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkstyle-result.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkstyle-result.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/Pokedex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/Pokedex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokedexException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokedexException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokedexFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokedexFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/Pokemon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/Pokemon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonComparators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonComparators.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonMetadata.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonMetadata.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonMetadataProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonMetadataProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonTrainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonTrainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonTrainerFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonTrainerFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/RocketPokemonFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/Team.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/badges/checkstyle-result.svg" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/badges/checkstyle-result.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/checkstyle.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/checkstyle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/dependencies.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/dependencies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/dependency-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/dependency-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/distribution-management.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/distribution-management.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/integration.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/integration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/issue-tracking.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/issue-tracking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/license.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/mail-lists.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/mail-lists.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/plugin-management.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/plugin-management.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/plugins.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/plugins.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/project-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/project-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/project-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/project-reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/project-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/project-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/source-repository.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/source-repository.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/team-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/team-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokedexFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokedexFactoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokedexTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokedexTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonFactoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonMetadataProviderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonMetadataProviderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,14 +158,29 @@
       <command value="mvn post-site" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IPokemonFactoryTest">
+  <component name="RunManager" selected="JUnit.IPokemonTrainerFactoryTest">
     <configuration name="app" type="Application" factoryName="Application">
       <module name="java-project" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IPokedexTest.shouldReturnPokemonsWhenPokemonListIsGiven" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IPokedexFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.univavignon.pokedex.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
+      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokedexFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IPokedexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-project" />
       <extension name="coverage">
         <pattern>
@@ -127,39 +190,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
       <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokedexTest" />
-      <option name="METHOD_NAME" value="shouldReturnPokemonsWhenPokemonListIsGiven" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IPokemonFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.univavignon.pokedex.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
-      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokemonFactoryTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IPokemonFactoryTest.createAquali" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.univavignon.pokedex.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
-      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokemonFactoryTest" />
-      <option name="METHOD_NAME" value="createAquali" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -180,7 +211,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IPokemonFactoryTest.exceptionMetadataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IPokemonMetadataProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-project" />
       <extension name="coverage">
         <pattern>
@@ -189,9 +220,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
-      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokemonFactoryTest" />
-      <option name="METHOD_NAME" value="exceptionMetadataTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokemonMetadataProviderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IPokemonTrainerFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.univavignon.pokedex.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
+      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokemonTrainerFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -211,19 +256,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.app" />
-      <item itemvalue="JUnit.IPokemonFactoryTest.createAquali" />
-      <item itemvalue="JUnit.IPokedexTest.shouldReturnPokemonsWhenPokemonListIsGiven" />
-      <item itemvalue="JUnit.IPokemonFactoryTest.exceptionMetadataTest" />
-      <item itemvalue="JUnit.IPokemonFactoryTest" />
       <item itemvalue="JUnit.IPokemonFactoryTest.createBulbizarre" />
+      <item itemvalue="JUnit.IPokedexTest" />
+      <item itemvalue="JUnit.IPokedexFactoryTest" />
+      <item itemvalue="JUnit.IPokemonMetadataProviderTest" />
+      <item itemvalue="JUnit.IPokemonTrainerFactoryTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IPokemonFactoryTest" />
+        <item itemvalue="JUnit.IPokemonTrainerFactoryTest" />
+        <item itemvalue="JUnit.IPokemonMetadataProviderTest" />
         <item itemvalue="JUnit.IPokemonFactoryTest.createBulbizarre" />
-        <item itemvalue="JUnit.IPokemonFactoryTest.createAquali" />
-        <item itemvalue="JUnit.IPokemonFactoryTest.exceptionMetadataTest" />
-        <item itemvalue="JUnit.IPokedexTest.shouldReturnPokemonsWhenPokemonListIsGiven" />
+        <item itemvalue="JUnit.IPokedexFactoryTest" />
+        <item itemvalue="JUnit.IPokedexTest" />
       </list>
     </recent_temporary>
   </component>
@@ -272,14 +317,7 @@
       <workItem from="1681912047154" duration="448000" />
       <workItem from="1681912511871" duration="631000" />
       <workItem from="1681913163135" duration="6944000" />
-      <workItem from="1681971335049" duration="1836000" />
-    </task>
-    <task id="LOCAL-00003" summary="Réalisation des tests unitaires pour chaque interface (TP3)">
-      <created>1677145903214</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1677145903214</updated>
+      <workItem from="1681971335049" duration="5952000" />
     </task>
     <task id="LOCAL-00004" summary="Réalisation des tests unitaires pour chaque interface (TP3)">
       <created>1677145962349</created>
@@ -617,7 +655,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681923390320</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Envoie du badge checkstyle">
+      <created>1681973799524</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1681973799525</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,6 +702,8 @@
     <MESSAGE value="Modification des balises &lt;tt&gt; des classes et interfaces pour utiliser la javadoc (TP6)" />
     <MESSAGE value="Modification de config.yaml" />
     <MESSAGE value="Modification de config.yaml pour l'envoi de la doc JAVA" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification de config.yaml pour l'envoi de la doc JAVA" />
+    <MESSAGE value="Envoie du badge checkstyle" />
+    <MESSAGE value="Modification des classes pour ajouter les commentaires de la JavaDoc + Modification pour checkstyle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification des classes pour ajouter les commentaires de la JavaDoc + Modification pour checkstyle" />
   </component>
 </project>

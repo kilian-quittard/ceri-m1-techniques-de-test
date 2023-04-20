@@ -2,7 +2,6 @@ package fr.univavignon.pokedex.api;
 
 /**
  * Pokemon POJO.
- * 
  * @author fv
  */
 public final class Pokemon extends PokemonMetadata {
@@ -24,7 +23,6 @@ public final class Pokemon extends PokemonMetadata {
 	
 	/**
 	 * Default constructor.
-	 * 
 	 * @param index Pokemon index.
 	 * @param name Pokemon name.
 	 * @param attack Attack level.
@@ -55,27 +53,37 @@ public final class Pokemon extends PokemonMetadata {
 		this.iv = iv;
 	}
 
-	/** Combat Point getter getter. **/
+	/** Combat Point getter getter.
+	 * @return Cp of the pokemon.
+	 **/
 	public int getCp() {
 		return cp;
 	}
-	
-	/** HP getter. **/
+
+	/** HP getter.
+	 * @return Hp of the pokemon.
+	 */
 	public int getHp() {
 		return hp;
 	}
 
-	/** Dust getter. **/
+	/** Dust getter.
+	 * @return Dust of the pokemon.
+	 */
 	public int getDust() {
 		return dust;
 	}
 
-	/** Candy getter. **/
+	/** Candy getter.
+	 * @return Candy of the pokemon.
+	 */
 	public int getCandy() {
 		return candy;
 	}
-	
-	/** IV getter. **/
+
+	/** IV getter.
+	 * @return IV of the pokemon.
+	 */
 	public double getIv() {
 		return iv;
 	}

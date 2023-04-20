@@ -41,12 +41,12 @@ public class IPokedexTest {
 
     @Test
     public void shouldReturn0WhenBulbizarreIsAdded(){
-        Assert.assertEquals(pokedex.addPokemon(bulbizarre),bulbizarre.getIndex());
+        Assert.assertEquals(pokedex.addPokemon(bulbizarre),pokedex.size());
     }
 
     @Test
     public void shouldReturn133WhenAqualiIsAdded(){
-        Assert.assertEquals(pokedex.addPokemon(aquali),aquali.getIndex());
+        Assert.assertEquals(pokedex.addPokemon(aquali),pokedex.size());
     }
 
     @Test
@@ -60,9 +60,9 @@ public class IPokedexTest {
     @Test
     public void shouldReturnAqualiWhenGetPokemonIndexIs133() throws PokedexException {
         pokedex.addPokemon(aquali);
-        Assert.assertEquals(pokedex.getPokemon(133),aquali);
-        Assert.assertEquals(pokedex.getPokemon(133).getIndex(),133);
-        Assert.assertEquals(pokedex.getPokemon(133).getName(), "Aquali");
+        Assert.assertEquals(pokedex.getPokemon(0),aquali);
+        Assert.assertEquals(pokedex.getPokemon(0).getIndex(),133);
+        Assert.assertEquals(pokedex.getPokemon(0).getName(), "Aquali");
     }
 
 
