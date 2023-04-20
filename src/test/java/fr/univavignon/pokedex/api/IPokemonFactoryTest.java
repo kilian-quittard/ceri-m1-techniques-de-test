@@ -10,7 +10,9 @@ import static org.mockito.Mockito.when;
 public class IPokemonFactoryTest {
 
     IPokemonFactory pokemonFactory;
-
+    IPokemonFactory pokemonFactory2;
+    IPokemonMetadataProvider pokemonMetadataProvider;
+    Pokedex pokedex;
     Pokemon bulbizarre;
     Pokemon aquali;
 
@@ -18,6 +20,9 @@ public class IPokemonFactoryTest {
     @Before
     public void init() {
         pokemonFactory = new PokemonFactory();
+        pokemonMetadataProvider = new PokemonMetadataProvider();
+        pokedex = new Pokedex(pokemonMetadataProvider,pokemonFactory);
+        pokemonFactory2 = pokedex.getPokemonFactory();
         bulbizarre = new Pokemon(0, "Bulbizarre", 126, 126, 90, 613, 64, 4000, 4, 56);
         aquali = new Pokemon(133,"Aquali",186,168,260,2729,202,5000,4,100);
     }
@@ -62,8 +67,10 @@ public class IPokemonFactoryTest {
         int high = 100;
         int low = 0;
         Assert.assertEquals((high + low) / 2.0, aquali.getIv(), (high - low) / 2.0);
-
-
     }
 
+    @Test
+    public void getPokemonFactory() throws PokedexException {
+        Assert.assertEquals(pokemonFactory,pokemonFactory2);
+    }
 }

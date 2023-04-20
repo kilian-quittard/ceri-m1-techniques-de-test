@@ -104,4 +104,5 @@ public class IPokedexTest {
         Assert.assertEquals(pokemonMetadata.getDefense(),bulbizarre.getDefense());
         Assert.assertEquals(pokemonMetadata.getStamina(),bulbizarre.getStamina());
     }
+
 }

@@ -13,12 +13,18 @@ public class IPokemonMetadataProviderTest {
     PokemonMetadata bulbizarreMetadata;
     PokemonMetadata aqualiMetadata;
 
+    IPokemonFactory pokemonFactory;
+    Pokedex pokedex;
+    IPokemonMetadataProvider pokemonMetadataProvider2;
 
     @Before
     public void init() throws PokedexException {
         pokemonMetadataProvider = new PokemonMetadataProvider();
         bulbizarreMetadata = new PokemonMetadata(0, "Bulbizarre", 126, 126, 90);
         aqualiMetadata = new PokemonMetadata(133, "Aquali", 186, 168, 260);
+        pokemonFactory = new PokemonFactory();
+        pokedex = new Pokedex(pokemonMetadataProvider,pokemonFactory);
+        pokemonMetadataProvider2 = pokedex.getPokemonMetadataProvider();
     }
 
     @Test
@@ -41,5 +47,11 @@ public class IPokemonMetadataProviderTest {
         Assert.assertEquals("Aquali",aqualiMetadata.getName());
         Assert.assertEquals(186,aqualiMetadata.getAttack());
         Assert.assertEquals(168,aqualiMetadata.getDefense());
-        Assert.assertEquals(260,aqualiMetadata.getStamina());    }
+        Assert.assertEquals(260,aqualiMetadata.getStamina());
+    }
+
+    @Test
+    public void getPokemonMetadataProvider() throws PokedexException {
+        Assert.assertEquals(pokemonMetadataProvider,pokemonMetadataProvider2);
+    }
 }
