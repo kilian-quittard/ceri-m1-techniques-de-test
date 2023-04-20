@@ -13,6 +13,7 @@ public class IPokedexFactoryTest {
     IPokemonMetadataProvider pokemonMetadataProvider;
     IPokemonFactory pokemonFactory;
 
+
     @Before
     public void init(){
         pokedexFactory = new PokedexFactory();

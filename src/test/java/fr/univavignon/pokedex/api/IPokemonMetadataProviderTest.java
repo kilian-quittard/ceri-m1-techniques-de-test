@@ -13,6 +13,7 @@ public class IPokemonMetadataProviderTest {
     PokemonMetadata bulbizarreMetadata;
     PokemonMetadata aqualiMetadata;
 
+
     @Before
     public void init() throws PokedexException {
         pokemonMetadataProvider = new PokemonMetadataProvider();

@@ -65,6 +65,7 @@ public class IPokedexTest {
         Assert.assertEquals(pokedex.getPokemon(133).getName(), "Aquali");
     }
 
+
     @Test
     public void shouldReturnPokemonsWhenPokemonListIsGiven(){
         List pokemons = new ArrayList<>();

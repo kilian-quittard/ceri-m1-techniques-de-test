@@ -37,6 +37,8 @@ public class Pokedex implements IPokedex {
             }
         }
         throw new PokedexException("Le Pokémon n'est pas enregistré dans le pokédex");
+
+
     }
 
     @Override

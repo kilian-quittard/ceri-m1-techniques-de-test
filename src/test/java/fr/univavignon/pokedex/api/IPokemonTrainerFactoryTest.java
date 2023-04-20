@@ -13,6 +13,7 @@ public class IPokemonTrainerFactoryTest {
     IPokedexFactory pokedexFactory;
     IPokedex pokedex;
 
+    
     @Before
     public void init(){
         pokemonTrainerFactory = new PokemonTrainerFactory();

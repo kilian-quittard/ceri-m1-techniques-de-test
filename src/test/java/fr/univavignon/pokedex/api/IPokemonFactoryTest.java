@@ -14,6 +14,7 @@ public class IPokemonFactoryTest {
     Pokemon bulbizarre;
     Pokemon aquali;
 
+
     @Before
     public void init() {
         pokemonFactory = new PokemonFactory();
