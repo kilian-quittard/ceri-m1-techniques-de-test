@@ -27,7 +27,7 @@ public class PokemonMetadataProvider implements IPokemonMetadataProvider {
      * @throws PokedexException If given <code>index</code> is not valid.
      */
     @Override
-    public PokemonMetadata getPokemonMetadata(int index) throws PokedexException {
+    public PokemonMetadata getPokemonMetadata(final int index) throws PokedexException {
         for (PokemonMetadata metadata : pokemonMetadataList) {
             if (metadata.getIndex() == index) {
                 return metadata;

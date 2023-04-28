@@ -1,110 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="9.3">
-<file name="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1/src/main/java/fr/univavignon/pokedex/api/PokedexException.java">
-<error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<file name="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1\src\main\java\fr\univavignon\pokedex\api\IPokedex.java">
 </file>
-<file name="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1/src/main/java/fr/univavignon/pokedex/api/IPokemonFactory.java">
-<error line="8" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
-<error line="17" severity="error" message="Line is longer than 80 characters (found 102)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<file name="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1\src\main\java\fr\univavignon\pokedex\api\IPokedexFactory.java">
 </file>
-<file name="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1/src/main/java/fr/univavignon/pokedex/api/PokemonComparators.java">
-<error line="11" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
-<error line="16" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="19" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<file name="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1\src\main\java\fr\univavignon\pokedex\api\IPokemonFactory.java">
 </file>
-<file name="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1/src/main/java/fr/univavignon/pokedex/api/PokemonTrainerFactory.java">
-<error line="12" severity="error" message="Line is longer than 80 characters (found 115)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="13" severity="error" message="Line is longer than 80 characters (found 129)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<file name="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1\src\main\java\fr\univavignon\pokedex\api\IPokemonMetadataProvider.java">
 </file>
-<file name="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1/src/main/java/fr/univavignon/pokedex/api/IPokemonMetadataProvider.java">
-<error line="9" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<file name="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1\src\main\java\fr\univavignon\pokedex\api\IPokemonTrainerFactory.java">
 </file>
-<file name="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1/src/main/java/fr/univavignon/pokedex/api/PokemonMetadata.java">
-<error line="5" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="10" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
-<error line="33" severity="error" message="Line is longer than 80 characters (found 84)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="33" column="42" severity="error" message="&apos;index&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="33" column="62" severity="error" message="&apos;name&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="33" column="78" severity="error" message="&apos;attack&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="34" severity="error" message="Line is longer than 80 characters (found 90)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="34" column="62" severity="error" message="&apos;defense&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="34" column="81" severity="error" message="&apos;stamina&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<file name="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1\src\main\java\fr\univavignon\pokedex\api\package-info.java">
 </file>
-<file name="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1/src/main/java/fr/univavignon/pokedex/api/PokemonTrainer.java">
-<error line="9" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
-<error line="14" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="17" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="24" severity="error" message="Line is longer than 80 characters (found 91)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="24" column="44" severity="error" message="&apos;name&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="24" column="61" severity="error" message="&apos;team&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="24" column="82" severity="error" message="&apos;pokedex&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="50" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<file name="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1\src\main\java\fr\univavignon\pokedex\api\Pokedex.java">
 </file>
-<file name="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1/src/main/java/fr/univavignon/pokedex/api/IPokemonTrainerFactory.java">
-<error line="8" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
-<error line="15" severity="error" message="Line is longer than 80 characters (found 93)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<file name="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1\src\main\java\fr\univavignon\pokedex\api\PokedexException.java">
 </file>
-<file name="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1/src/main/java/fr/univavignon/pokedex/api/Team.java">
-<error line="8" severity="error" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
-<error line="8" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
-<error line="13" severity="error" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
-<error line="18" severity="error" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+<file name="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1\src\main\java\fr\univavignon\pokedex\api\PokedexFactory.java">
 </file>
-<file name="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1/src/main/java/fr/univavignon/pokedex/api/PokemonMetadataProvider.java">
-<error line="18" severity="error" message="Line is longer than 80 characters (found 84)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="18" column="70" severity="error" message="&apos;126&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="18" column="75" severity="error" message="&apos;126&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="18" column="80" severity="error" message="&apos;90&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="19" severity="error" message="Line is longer than 80 characters (found 83)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="19" column="53" severity="error" message="&apos;133&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="19" column="68" severity="error" message="&apos;186&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="19" column="73" severity="error" message="&apos;168&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="19" column="78" severity="error" message="&apos;260&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="30" severity="error" message="Line is longer than 80 characters (found 82)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="30" column="47" severity="error" message="Parameter index should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<file name="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1\src\main\java\fr\univavignon\pokedex\api\Pokemon.java">
 </file>
-<file name="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1/src/main/java/fr/univavignon/pokedex/api/Pokedex.java">
-<error line="26" severity="error" message="Line is longer than 80 characters (found 88)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="26" column="20" severity="error" message="Parameter metadataProvider should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="26" column="63" severity="error" message="Parameter factory should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="58" severity="error" message="Line is longer than 80 characters (found 90)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="76" column="38" severity="error" message="Parameter order should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="93" severity="error" message="Line is longer than 80 characters (found 136)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="105" severity="error" message="Line is longer than 80 characters (found 88)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<file name="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1\src\main\java\fr\univavignon\pokedex\api\PokemonComparators.java">
 </file>
-<file name="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1/src/main/java/fr/univavignon/pokedex/api/Pokemon.java">
-<error line="9" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
-<error line="23" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="37" column="16" severity="error" message="More than 7 parameters (found 10)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
-<error line="43" column="35" severity="error" message="&apos;cp&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="44" column="35" severity="error" message="&apos;hp&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="45" column="35" severity="error" message="&apos;dust&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="46" column="35" severity="error" message="&apos;candy&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="47" column="38" severity="error" message="&apos;iv&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="90" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<file name="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1\src\main\java\fr\univavignon\pokedex\api\PokemonFactory.java">
 </file>
-<file name="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1/src/main/java/fr/univavignon/pokedex/api/IPokedex.java">
-<error line="13" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
-<error line="18" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="26" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="34" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="48" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<file name="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1\src\main\java\fr\univavignon\pokedex\api\PokemonMetadata.java">
 </file>
-<file name="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1/src/main/java/fr/univavignon/pokedex/api/PokedexFactory.java">
-<error line="1" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
-<error line="12" severity="error" message="Line is longer than 80 characters (found 122)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<file name="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1\src\main\java\fr\univavignon\pokedex\api\PokemonMetadataProvider.java">
 </file>
-<file name="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1/src/main/java/fr/univavignon/pokedex/api/PokemonFactory.java">
-<error line="14" severity="error" message="Line is longer than 80 characters (found 110)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="17" column="9" severity="error" message="&apos;if&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
-<error line="17" column="22" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="21" severity="error" message="Line is longer than 80 characters (found 98)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="22" column="43" severity="error" message="&apos;100&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="24" severity="error" message="Line is longer than 80 characters (found 89)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<file name="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1\src\main\java\fr\univavignon\pokedex\api\PokemonTrainer.java">
 </file>
-<file name="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1/src/main/java/fr/univavignon/pokedex/api/IPokedexFactory.java">
-<error line="8" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
-<error line="9" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="15" severity="error" message="Line is longer than 80 characters (found 106)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<file name="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1\src\main\java\fr\univavignon\pokedex\api\PokemonTrainerFactory.java">
+</file>
+<file name="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1\src\main\java\fr\univavignon\pokedex\api\Team.java">
 </file>
 </checkstyle>

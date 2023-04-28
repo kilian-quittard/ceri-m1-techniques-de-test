@@ -29,8 +29,13 @@ public class IPokedexTest {
     }
 
     @Test
-    public void exceptionPokedexTest(){
+    public void exceptionPokedexTestIndexGreaterThanListSize(){
         Assert.assertThrows(PokedexException.class, () -> pokedex.getPokemon(12));
+    }
+
+    @Test
+    public void exceptionPokedexTestNegativeIndex(){
+        Assert.assertThrows(PokedexException.class, () -> pokedex.getPokemon(-12));
     }
 
     @Test

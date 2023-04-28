@@ -1,6 +1,11 @@
 package fr.univavignon.pokedex.api;
 
+/**
+ * Factory Class that aims to create Pokemon instance.
+ * @author fv
+ */
 public class PokemonFactory implements IPokemonFactory {
+
     /**
      * Creates a pokemon instance computing it IVs.
      * @param index Pokemon index.
@@ -14,7 +19,7 @@ public class PokemonFactory implements IPokemonFactory {
     public Pokemon createPokemon(final int index, final int cp, final int hp, final int dust, final int candy)
             throws PokedexException {
 
-        if(index < 0){
+        if (index < 0) {
             throw new PokedexException("Index inférieur à 0");
         }
 
@@ -25,4 +30,6 @@ public class PokemonFactory implements IPokemonFactory {
                 pokemonMetadata.getDefense(), pokemonMetadata.getStamina(),
                 cp, hp, dust, candy, iv);
     }
+
 }
+

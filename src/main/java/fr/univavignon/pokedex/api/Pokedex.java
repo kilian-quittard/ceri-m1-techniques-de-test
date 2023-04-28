@@ -23,7 +23,7 @@ public class Pokedex implements IPokedex {
      * @param metadataProvider PokemonMetadataProvider to add to this pokedex.
      * @param factory PokemonFactory to add to this pokedex.
      */
-    public Pokedex(IPokemonMetadataProvider metadataProvider, IPokemonFactory factory) {
+    public Pokedex(final IPokemonMetadataProvider metadataProvider, final IPokemonFactory factory) {
         pokemons = new ArrayList<>();
         pokemonFactory = factory;
         pokemonMetadataProvider = metadataProvider;
@@ -73,7 +73,7 @@ public class Pokedex implements IPokedex {
      * @return The list of pokemons captured in order.
      */
     @Override
-    public List<Pokemon> getPokemons(Comparator<Pokemon> order) {
+    public List<Pokemon> getPokemons(final Comparator<Pokemon> order) {
         List<Pokemon> pokemonList = pokemons;
         pokemonList.sort(order);
         return Collections.unmodifiableList(pokemonList);

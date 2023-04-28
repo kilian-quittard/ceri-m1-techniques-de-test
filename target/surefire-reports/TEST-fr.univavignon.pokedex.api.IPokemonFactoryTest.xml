@@ -1,68 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="fr.univavignon.pokedex.api.IPokemonFactoryTest" time="0" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="fr.univavignon.pokedex.api.IPokemonFactoryTest" time="0" errors="0" skipped="0">
   <properties>
-    <property name="idea.version" value="2021.2.3"/>
+    <property name="idea.version" value="2021.2.2"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="19.0.1+10-21"/>
-    <property name="sun.boot.library.path" value="C:\Users\Kilian\.jdks\openjdk-19.0.1\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1"/>
+    <property name="sun.boot.library.path" value="/home/nas-wks01/users/uapv2002058/.jdks/openjdk-19.0.1/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="path.separator" value=";"/>
+    <property name="path.separator" value=":"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="user.script" value=""/>
     <property name="user.country" value="FR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\Logiciels\IntelliJ IDEA 2021.2.3\project\TechniquesDeTest\tp1"/>
+    <property name="user.dir" value="/home/nas-wks01/users/uapv2002058/Bureau/Techniques de Test/tp1"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="19.0.1+10-21"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\Kilian\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.variant" value=""/>
-    <property name="stderr.encoding" value="Cp1252"/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="maven.ext.class.path" value="D:\Logiciels\IntelliJ IDEA 2021.2.3\plugins\maven\lib\maven-event-listener.jar"/>
-    <property name="classworlds.conf" value="D:\Logiciels\IntelliJ IDEA 2021.2.3\plugins\maven\lib\maven3\bin\m2.conf"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="stdout.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Users\Kilian\.jdks\openjdk-19.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python311\Scripts\;C:\Python311\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Users\Kilian\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;D:\Logiciels\Actiona;D:\Logiciels\xampp7\php;D:\Logiciels\composer;D:\Logiciels\nodeJS\;C:\ProgramData\chocolatey\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\dotnet\;C:\Users\Kilian\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\Kilian\AppData\Local\Programs\Python\Python38\;C:\Users\Kilian\scoop\shims;C:\Users\Kilian\AppData\Local\Microsoft\WindowsApps;C:\Users\Kilian\AppData\Roaming\Composer\vendor\bin;C:\Users\Kilian\AppData\Roaming\npm;."/>
-    <property name="maven.conf" value="D:\Logiciels\IntelliJ IDEA 2021.2.3\plugins\maven\lib\maven3/conf"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="maven.ext.class.path" value="/usr/local/stow/Intellij_idea-2021.2.2/plugins/maven/lib/maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="/usr/local/stow/Intellij_idea-2021.2.2/plugins/maven/lib/maven3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="java.library.path" value=":/opt/ibm/ILOG/CPLEX_Studio1261/cplex/bin/x86-64_linux:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/local/stow/Intellij_idea-2021.2.2/plugins/maven/lib/maven3/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="63.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\Kilian"/>
+    <property name="os.version" value="5.15.0-69-generic"/>
+    <property name="user.home" value="/home/nas-wks01/users/uapv2002058"/>
     <property name="user.timezone" value="Europe/Paris"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="19"/>
-    <property name="user.name" value="Kilian"/>
-    <property name="java.class.path" value="D:\Logiciels\IntelliJ IDEA 2021.2.3\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;D:\Logiciels\IntelliJ IDEA 2021.2.3\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="user.name" value="uapv2002058@ad.univ-avignon.fr"/>
+    <property name="java.class.path" value="/usr/local/stow/Intellij_idea-2021.2.2/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar:/usr/local/stow/Intellij_idea-2021.2.2/plugins/maven/lib/maven3/boot/plexus-classworlds.license"/>
     <property name="java.vm.specification.version" value="19"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.3 clean install"/>
-    <property name="java.home" value="C:\Users\Kilian\.jdks\openjdk-19.0.1"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.2 clean install"/>
+    <property name="java.home" value="/home/nas-wks01/users/uapv2002058/.jdks/openjdk-19.0.1"/>
     <property name="user.language" value="fr"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.version" value="19.0.1"/>
-    <property name="native.encoding" value="Cp1252"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="D:\Logiciels\IntelliJ IDEA 2021.2.3\plugins\maven\lib\maven3"/>
-    <property name="file.separator" value="\"/>
+    <property name="maven.home" value="/usr/local/stow/Intellij_idea-2021.2.2/plugins/maven/lib/maven3"/>
+    <property name="file.separator" value="/"/>
     <property name="java.version.date" value="2022-10-18"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase classname="fr.univavignon.pokedex.api.IPokemonFactoryTest" name="createBulbizarre" time="0"/>
   <testcase classname="fr.univavignon.pokedex.api.IPokemonFactoryTest" name="exceptionMetadataTest" time="0"/>
+  <testcase classname="fr.univavignon.pokedex.api.IPokemonFactoryTest" name="getPokemonFactory" time="0"/>
   <testcase classname="fr.univavignon.pokedex.api.IPokemonFactoryTest" name="createAquali" time="0"/>
 </testsuite>
